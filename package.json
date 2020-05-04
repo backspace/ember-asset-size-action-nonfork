@@ -1,5 +1,5 @@
 {
-  "name": "ember-asset-size-action",
+  "name": "ember-asset-size-action-nonfork",
   "version": "0.0.0",
   "private": true,
   "description": "Show asset size changes on ",
