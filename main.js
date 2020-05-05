@@ -75,10 +75,6 @@ export default async function run() {
     warning(`end of token again? ${token.slice(-1)}`);
 
     const octokit = new GitHub(token);
-    const { data: userData } = await octokit.request("/user");
-    warning('user data?');
-    warning(JSON.stringify(userData));
-
 
     const pullRequest = await getPullRequest(context, octokit);
     const fileDiffs = await diffAssets({ pullRequest, cwd, usePrArtifacts });
